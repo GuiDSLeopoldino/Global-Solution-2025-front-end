@@ -1,0 +1,711 @@
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .floating-cards {
+        width: 350px;
+        height: 250px;
+    }
+
+    /* Sistema SkillVerse Responsivo */
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .info-panel {
+        flex: 1;
+        margin-top: 20px;
+    }
+    
+    .simulation-content {
+        padding: 30px;
+    }
+    
+    .simulation-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablets Pequenos e Mobile Large */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        gap: 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 1rem 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0 50px;
+    }
+    
+    .hero-content {
+        margin-bottom: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-stack {
+        justify-content: center;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Sistema SkillVerse Responsivo */
+    .skillverse-container {
+        margin: 80px auto 20px;
+        padding: 0 15px;
+    }
+    
+    .skillverse-header {
+        padding: 15px;
+    }
+    
+    .skillverse-header h1 {
+        font-size: 2rem;
+    }
+    
+    .chat-messages {
+        max-height: 400px;
+        padding: 15px;
+    }
+    
+    .message {
+        max-width: 90%;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .quick-actions {
+        padding: 8px 12px;
+    }
+    
+    .quick-action {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .info-panel {
+        padding: 15px;
+    }
+    
+    .trilha-item {
+        padding: 10px;
+    }
+    
+    /* Simulação em Mobile */
+    .simulation-content {
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .simulation-title {
+        font-size: 2rem;
+    }
+    
+    .simulation-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .simulation-question {
+        font-size: 1.1rem;
+    }
+    
+    .option {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .option-letter {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .option-text {
+        font-size: 1rem;
+    }
+    
+    .key {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .keyboard-row {
+        gap: 6px;
+    }
+    
+    .libras-interpreter {
+        width: calc(100% - 40px);
+        left: 20px;
+        right: 20px;
+    }
+    
+    .congratulations-content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .congratulations-title {
+        font-size: 3rem;
+    }
+    
+    .congratulations-message {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .team-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat {
+        padding: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .floating-cards {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .method-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Sistema SkillVerse Mobile */
+    .skillverse-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .chat-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .bot-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .chat-input-container {
+        padding: 10px;
+    }
+    
+    .chat-input {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .send-button {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .info-section h3 {
+        font-size: 1.1rem;
+    }
+    
+    .trilha-title {
+        font-size: 0.9rem;
+    }
+    
+    .trilha-desc {
+        font-size: 0.8rem;
+    }
+    
+    /* Simulação Mobile */
+    .simulation-title {
+        font-size: 1.8rem;
+    }
+    
+    .simulation-content {
+        padding: 15px;
+    }
+    
+    .simulation-question {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .option {
+        padding: 12px;
+    }
+    
+    .option-text {
+        font-size: 0.9rem;
+    }
+    
+    .answer-input {
+        padding: 15px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .submit-answer {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    
+    .key {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .keyboard-row {
+        gap: 4px;
+        margin-bottom: 6px;
+    }
+    
+    .congratulations-title {
+        font-size: 2.5rem;
+    }
+    
+    .congratulations-message {
+        font-size: 1.1rem;
+    }
+    
+    .continue-button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .floating-cards {
+        width: 250px;
+        height: 150px;
+    }
+    
+    /* Sistema SkillVerse Mobile Pequeno */
+    .skillverse-header {
+        padding: 10px;
+    }
+    
+    .skillverse-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .chat-container {
+        min-width: unset;
+    }
+    
+    .quick-actions {
+        gap: 5px;
+    }
+    
+    .quick-action {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+    
+    .key {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Altura específica para mobile */
+@media (max-height: 700px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 0 40px;
+    }
+    
+    .page-header {
+        padding: 80px 0 30px;
+    }
+    
+    /* Sistema SkillVerse Landscape */
+    .chat-messages {
+        max-height: 300px;
+    }
+    
+    .simulation-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .simulation-keyboard {
+        margin-top: 15px;
+    }
+}
+
+/* Impressão */
+@media print {
+    .navbar,
+    .footer,
+    .hero-actions,
+    .cta-section,
+    .accessibility-button,
+    .libras-interpreter {
+        display: none;
+    }
+    
+    .hero,
+    .page-header {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        max-width: none;
+    }
+    
+    .skillverse-container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+        --text-light: #cccccc;
+        --border-color: #333333;
+    }
+    
+    .feature,
+    .offering,
+    .faq-item,
+    .contact-form,
+    .team-member,
+    .stat,
+    .value-card {
+        background: #2d2d2d;
+        color: var(--text-color);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background: #2d2d2d;
+        color: var(--text-color);
+        border-color: #444;
+    }
+    
+    /* Sistema SkillVerse Dark Mode */
+    .skillverse-header {
+        background: rgba(45, 45, 45, 0.9);
+        color: var(--text-color);
+    }
+    
+    .chat-container {
+        background: rgba(45, 45, 45, 0.9);
+    }
+    
+    .chat-header {
+        background: linear-gradient(135deg, #2d2d2d, #3d3d3d);
+    }
+    
+    .bot-message {
+        background: #3d3d3d;
+        color: var(--text-color);
+    }
+    
+    .user-message {
+        background: linear-gradient(135deg, #1a2a6c, #2c3e9e);
+    }
+    
+    .quick-action {
+        background: #3d3d3d;
+        color: var(--text-color);
+    }
+    
+    .quick-action:hover {
+        background: #4d4d4d;
+    }
+    
+    .info-panel {
+        background: rgba(45, 45, 45, 0.9);
+    }
+    
+    .info-section h3 {
+        color: var(--accent-color);
+        border-bottom-color: #444;
+    }
+    
+    .trilha-item {
+        background: #3d3d3d;
+    }
+    
+    .trilha-item:hover {
+        background: #4d4d4d;
+    }
+    
+    .trilha-title {
+        color: var(--accent-color);
+    }
+    
+    .trilha-desc {
+        color: var(--text-light);
+    }
+    
+    .progress-bar {
+        background: #444;
+    }
+}
+
+/* Acessibilidade - Alto Contraste */
+@media (prefers-contrast: high) {
+    .nav-link {
+        border: 1px solid transparent;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        border-color: var(--primary-color);
+    }
+    
+    .btn {
+        border: 2px solid transparent;
+    }
+    
+    .btn:hover {
+        border-color: currentColor;
+    }
+    
+    .feature {
+        border: 1px solid var(--border-color);
+    }
+    
+    .option {
+        border-width: 3px;
+    }
+    
+    .key {
+        border-width: 3px;
+    }
+}
+
+/* Redução de Movimento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .card:hover,
+    .feature:hover,
+    .team-member:hover,
+    .option:hover,
+    .key:hover,
+    .continue-button:hover,
+    .submit-answer:hover {
+        transform: none;
+    }
+    
+    .particle,
+    .lightning-bolt,
+    .confetti,
+    .hand {
+        animation: none;
+        display: none;
+    }
+}
+
+/* Orientação Portrait */
+@media (orientation: portrait) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero-visual {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Orientação Landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero {
+        padding: 100px 0 40px;
+        min-height: auto;
+    }
+    
+    .page-header {
+        padding: 80px 0 20px;
+    }
+    
+    .skillverse-container {
+        margin: 80px auto 10px;
+    }
+}
