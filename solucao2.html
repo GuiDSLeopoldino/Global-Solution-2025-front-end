@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução 2 - Componentes Interativos - TechSolutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechSolutions</h1>
+            </div>
+            <nav class="nav-menu">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="integrantes.html" class="nav-link">Integrantes</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="solucao1.html" class="nav-link">Solução 1</a></li>
+                    <li><a href="solucao2.html" class="nav-link">Solução 2</a></li>
+                    <li><a href="SkillVerseParaHTML.html" class="nav-link">Realidade Virtual</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Solução 2: Componentes Interativos</h1>
+                <p class="page-description">Experiências dinâmicas e responsivas com JavaScript moderno</p>
+            </div>
+        </section>
+
+        <section class="solution-content">
+            <div class="container">
+                <div class="solution-intro">
+                    <h2>Problema: Interfaces Estáticas</h2>
+                    <p>Muitos sites oferecem experiências limitadas devido à falta de interatividade, resultando em engajamento reduzido e funcionalidades básicas que não atendem às expectativas dos usuários modernos.</p>
+                </div>
+
+                <div class="interactive-demo">
+                    <h2>Demonstração de Componentes</h2>
+                    
+                    <div class="component-section">
+                        <h3>Tab System</h3>
+                        <div class="tabs-container">
+                            <div class="tabs-header">
+                                <button class="tab-btn active" data-tab="tab1">Descrição</button>
+                                <button class="tab-btn" data-tab="tab2">Funcionalidades</button>
+                                <button class="tab-btn" data-tab="tab3">Código</button>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="tab-pane active" id="tab1">
+                                    <p>Sistema de abas totalmente responsivo e acessível, implementado com JavaScript vanilla.</p>
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                    <ul>
+                                        <li>Navegação por teclado</li>
+                                        <li>Indicador visual ativo</li>
+                                        <li>Transições suaves</li>
+                                        <li>Responsivo para mobile</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="tab3">
+                                    <pre><code>// JavaScript para controle das abas
+const tabButtons = document.querySelectorAll('.tab-btn');
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Lógica de ativação
+  });
+});</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="component-section">
+                        <h3>Modal Interativo</h3>
+                        <button class="btn btn-primary" id="openModal">Abrir Modal Demo</button>
+                    </div>
+
+                    <div class="component-section">
+                        <h3>Slider de Conteúdo</h3>
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <div class="slide active">
+                                    <h4>Slide 1</h4>
+                                    <p>Conteúdo do primeiro slide</p>
+                                </div>
+                                <div class="slide">
+                                    <h4>Slide 2</h4>
+                                    <p>Conteúdo do segundo slide</p>
+                                </div>
+                                <div class="slide">
+                                    <h4>Slide 3</h4>
+                                    <p>Conteúdo do terceiro slide</p>
+                                </div>
+                            </div>
+                            <div class="slider-nav">
+                                <button class="slider-prev">‹</button>
+                                <button class="slider-next">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technical-specs">
+                    <h2>Especificações Técnicas</h2>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <h3>Performance</h3>
+                            <p>JavaScript otimizado com event delegation e lazy loading</p>
+                        </div>
+                        <div class="spec-item">
+                            <h3>Acessibilidade</h3>
+                            <p>ARIA labels, navegação por teclado e contraste adequado</p>
+                        </div>
+                        <div class="spec-item">
+                            <h3>Responsividade</h3>
+                            <p>Componentes adaptáveis para todos os dispositivos</p>
+                        </div>
+                        <div class="spec-item">
+                            <h3>Manutenibilidade</h3>
+                            <p>Código modular e bem documentado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="demoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Modal Demonstrativo</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Este modal demonstra a implementação de componentes interativos com JavaScript puro.</p>
+                <p>Recursos incluídos:</p>
+                <ul>
+                    <li>Fechar com ESC ou clique fora</li>
+                    <li>Foco gerenciado para acessibilidade</li>
+                    <li>Animações suaves de entrada/saída</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechSolutions - Todos os direitos reservados</p>
+            <p>Projeto de Front-End Design Engineering</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html>

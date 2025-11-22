@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução 1 - Design System - TechSolutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>TechSolutions</h1>
+            </div>
+            <nav class="nav-menu">
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="integrantes.html" class="nav-link">Integrantes</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="solucao1.html" class="nav-link">Solução 1</a></li>
+                    <li><a href="solucao2.html" class="nav-link">Solução 2</a></li>
+                    <li><a href="SkillVerseParaHTML.html" class="nav-link">Realidade Virtual</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Solução 1: Design System Consistente</h1>
+                <p class="page-description">Sistema de design unificado para interfaces coesas e escaláveis</p>
+            </div>
+        </section>
+
+        <section class="solution-content">
+            <div class="container">
+                <div class="solution-intro">
+                    <h2>Problema: Inconsistência Visual</h2>
+                    <p>Projetos web frequentemente sofrem com falta de padronização visual, resultando em interfaces desorganizadas, experiência do usuário inconsistente e dificuldade de manutenção.</p>
+                </div>
+
+                <div class="solution-features">
+                    <h2>Nossa Solução: Design System</h2>
+                    <div class="features-grid">
+                        <div class="feature-detail">
+                            <h3>🎨 Paleta de Cores</h3>
+                            <p>Sistema de cores organizado com variáveis CSS para consistência em todo o projeto</p>
+                            <div class="color-palette">
+                                <div class="color-item primary">Primary</div>
+                                <div class="color-item secondary">Secondary</div>
+                                <div class="color-item accent">Accent</div>
+                            </div>
+                        </div>
+
+                        <div class="feature-detail">
+                            <h3>📐 Sistema de Espaçamento</h3>
+                            <p>Escala consistente de margins e paddings baseada em múltiplos de 8px</p>
+                            <div class="spacing-demo">
+                                <div class="spacing-item small">8px</div>
+                                <div class="spacing-item medium">16px</div>
+                                <div class="spacing-item large">24px</div>
+                            </div>
+                        </div>
+
+                        <div class="feature-detail">
+                            <h3>🔤 Tipografia Hierárquica</h3>
+                            <p>Sistema de fontes com hierarquia clara para títulos e textos</p>
+                            <div class="typography-demo">
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <p>Paragraph text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <h2>Implementação com CSS Variables</h2>
+                    <pre><code class="css-code">:root {
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --font-heading: 'Segoe UI', sans-serif;
+  --font-body: 'Segoe UI', sans-serif;
+}</code></pre>
+                </div>
+
+                <div class="benefits">
+                    <h2>Benefícios do Design System</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <h3>Consistência Visual</h3>
+                            <p>Interface uniforme em todas as páginas e componentes</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Desenvolvimento Ágil</h3>
+                            <p>Reutilização de componentes acelera o desenvolvimento</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Manutenção Simplificada</h3>
+                            <p>Alterações globais através das variáveis CSS</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Escalabilidade</h3>
+                            <p>Sistema preparado para crescimento do projeto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechSolutions - Todos os direitos reservados</p>
+            <p>Projeto de Front-End Design Engineering</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
