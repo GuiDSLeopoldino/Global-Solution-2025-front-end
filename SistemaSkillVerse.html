@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema SkillVerse - Experiência de Simulação Imersiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SkillVerse</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="integrantes.html" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="SistemaSkillVerse.html" class="nav-link cta-button active">Sistema</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>SkillVerse</h1>
+            <p class="subtitle">Aprenda, pratique e simule carreiras com nosso assistente virtual</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="bot-icon">SV</div>
+                    <h2>SkillBot</h2>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        Olá! 👋 Eu sou o SkillBot, seu assistente da SkillVerse.<br>
+                        Posso te ajudar com trilhas de aprendizado, progresso e até simulações de carreira.<br>
+                        O que você gostaria de fazer hoje?
+                    </div>
+                </div>
+                
+                <div class="quick-actions">
+                    <button class="quick-action" data-message="Quais trilhas tem">Ver Trilhas</button>
+                    <button class="quick-action" data-message="Quero fazer uma simulação">Simulação</button>
+                    <button class="quick-action" data-message="Como está meu progresso?">Meu Progresso</button>
+                    <button class="quick-action" data-message="O que está em alta em TI?">Tendências</button>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="userInput" placeholder="Digite sua mensagem...">
+                    <button class="send-button" id="sendButton">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-section">
+                    <h3>Trilhas Disponíveis</h3>
+                    <div class="trilha-item" data-trilha="programacao">
+                        <div class="trilha-title">💻 Programação</div>
+                        <div class="trilha-desc">Aprenda lógica, Java, banco de dados e APIs</div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress-programacao"></div>
+                        </div>
+                    </div>
+                    <div class="trilha-item" data-trilha="medicina">
+                        <div class="trilha-title">🏥 Medicina</div>
+                        <div class="trilha-desc">Simulações de diagnósticos e procedimentos</div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress-medicina"></div>
+                        </div>
+                    </div>
+                    <div class="trilha-item" data-trilha="engenharia">
+                        <div class="trilha-title">⚡ Engenharia Elétrica</div>
+                        <div class="trilha-desc">Circuitos, sistemas e projetos elétricos</div>
+                        <div class="progress-bar">
+                            <div class="progress" id="progress-engenharia"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Seu Progresso</h3>
+                    <div id="progress-info">
+                        <p>Complete simulações para desbloquear certificados!</p>
+                    </div>
+                    <div class="certificado" id="certificado">
+                        <strong>🎓 Certificado Conquistado!</strong>
+                        <p>Parabéns! Você concluiu uma simulação com sucesso.</p>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h3>Tendências em TI</h3>
+                    <ul>
+                        <li>Inteligência Artificial e Machine Learning</li>
+                        <li>Análise de Dados</li>
+                        <li>Desenvolvimento de Apps com IA</li>
+                        <li>Automação e Cloud Computing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão de Acessibilidade Libras -->
+    <button class="accessibility-button" id="accessibilityButton" title="Ativar/Desativar Intérprete de Libras">
+        👋
+    </button>
+
+    <!-- Intérprete de Libras -->
+    <div class="libras-interpreter" id="librasInterpreter">
+        <div class="libras-header">
+            <div class="libras-title">Intérprete de Libras</div>
+            <button class="close-libras" id="closeLibras">✕</button>
+        </div>
+        <div class="libras-avatar">
+            <div class="libras-hands">
+                <div class="hand hand-left"></div>
+                <div class="hand hand-right"></div>
+            </div>
+        </div>
+        <div class="libras-text" id="librasText">
+            Clique em "Traduzir para Libras" para ver a tradução da última mensagem.
+        </div>
+        <div class="libras-controls">
+            <button class="libras-control" id="translateLibras">Traduzir para Libras</button>
+            <button class="libras-control" id="pauseLibras">Pausar</button>
+        </div>
+    </div>
+
+    <!-- Tela de Simulação -->
+    <div class="simulation-screen" id="simulationScreen">
+        <div class="particles" id="particles"></div>
+        <div class="simulation-header">
+            <h2 class="simulation-title" id="simulationTitle">Simulação</h2>
+            <p class="simulation-subtitle" id="simulationSubtitle">Digite sua resposta</p>
+        </div>
+        
+        <div class="simulation-content">
+            <div class="simulation-question" id="simulationQuestion">
+                Carregando pergunta...
+            </div>
+            
+            <div class="simulation-options" id="simulationOptions">
+                <!-- Opções serão carregadas dinamicamente -->
+            </div>
+            
+            <input type="text" class="answer-input" id="answerInput" placeholder="Digite sua resposta..." readonly>
+            <button class="submit-answer" id="submitAnswer">Enviar Resposta</button>
+            
+            <div class="simulation-keyboard" id="simulationKeyboard">
+                <div class="keyboard-row">
+                    <div class="key" data-key="A">A</div>
+                    <div class="key" data-key="B">B</div>
+                    <div class="key" data-key="C">C</div>
+                    <div class="key backspace" data-key="backspace">⌫</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Parabéns -->
+    <div class="congratulations-screen" id="congratulationsScreen">
+        <div class="lightning" id="lightning"></div>
+        <div class="congratulations-content">
+            <h2 class="congratulations-title">🎉 PARABÉNS!</h2>
+            <p class="congratulations-message" id="congratulationsMessage">Você acertou a resposta e concluiu a simulação com sucesso!<br>Sua certificação foi registrada no sistema.</p>
+            <button class="continue-button" id="continueButton">Continuar Aprendendo</button>
+        </div>
+    </div>
+
+    <script src="SistemaSkillVerse.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
