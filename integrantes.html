@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe - SkillVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SkillVerse</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="integrantes.html" class="nav-link active">Equipe</a></li>
+                <li class="nav-item"><a href="SistemaSkillVerse.html" class="nav-link cta-button">Experimentar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="team-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Nossa Equipe</h1>
+                <p>Conheça as pessoas por trás do SkillVerse</p>
+            </div>
+
+            <div class="team-intro">
+                <h2>👥 Quem Somos</h2>
+                <p>Somos uma equipe apaixonada por educação e tecnologia, dedicada a criar experiências de aprendizado que transformam carreiras e vidas.</p>
+            </div>
+
+            <div class="team-grid" id="teamGrid">
+                <!-- Os dados da equipe serão carregados via JavaScript -->
+                <div class="loading-team">
+                    <div class="loading-spinner"></div>
+                    <p>Carregando informações da equipe...</p>
+                </div>
+            </div>
+
+            <div class="team-stats">
+                <div class="stat">
+                    <div class="stat-number" id="totalMembers">0</div>
+                    <div class="stat-label">Integrantes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="completedProjects">0</div>
+                    <div class="stat-label">Projetos Concluídos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="experienceYears">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="technologies">0</div>
+                    <div class="stat-label">Tecnologias</div>
+                </div>
+            </div>
+
+            <div class="team-values">
+                <h2>🎯 Nossos Valores</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🚀</div>
+                        <h3>Inovação</h3>
+                        <p>Buscamos constantemente novas formas de melhorar o aprendizado através da tecnologia</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>Colaboração</h3>
+                        <p>Trabalhamos em equipe para criar soluções que realmente fazem a diferença</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>Qualidade</h3>
+                        <p>Comprometidos com a excelência em cada detalhe da plataforma</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💝</div>
+                        <h3>Paixão</h3>
+                        <p>Acreditamos no poder transformador da educação e do aprendizado prático</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkillVerse</h3>
+                    <p>Plataforma de aprendizado imersivo para desenvolvimento de carreira</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Trilhas</h4>
+                    <ul>
+                        <li><a href="SistemaSkillVerse.html?trilha=programacao">Programação</a></li>
+                        <li><a href="SistemaSkillVerse.html?trilha=medicina">Medicina</a></li>
+                        <li><a href="SistemaSkillVerse.html?trilha=engenharia">Engenharia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SkillVerse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="team.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>
