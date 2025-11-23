@@ -121,7 +121,7 @@ Acompanhar progresso através de certificados
 Complementar aulas teóricas com práticas simuladas
 
 Oferecer exercícios interativos e envolventes
-
+ 
 Monitorar desenvolvimento dos estudantes
 
 🔮 Roadmap de Desenvolvimento
