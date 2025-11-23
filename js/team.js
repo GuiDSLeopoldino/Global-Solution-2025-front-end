@@ -1,37 +1,43 @@
-// Team data and functionality
 document.addEventListener('DOMContentLoaded', function() {
     const teamGrid = document.getElementById('teamGrid');
     const totalMembers = document.getElementById('totalMembers');
     const completedProjects = document.getElementById('completedProjects');
     const experienceYears = document.getElementById('experienceYears');
     const technologies = document.getElementById('technologies');
-    
-    // Sample team data - você deve atualizar com as informações reais
+ 
     const teamData = [
         {
-            name: "Seu Nome",
-            rm: "RM12345",
-            turma: "1TDSPX",
-            linkedin: "https://linkedin.com/in/seunome",
-            github: "https://github.com/seunome",
-            photo: "https://via.placeholder.com/150"
+            name: "Matheus Maciel",
+            rm: "567753",
+            turma: "1TDSPB",
+            linkedin: "https://www.linkedin.com/in/matheus-carneiro-maciel/",
+            github: "https://github.com/kakarneiro",
+            photo: "../img/matheus.jpeg"
         },
         {
-            name: "Membro 2",
-            rm: "RM67890", 
-            turma: "1TDSPX",
+            name: "Guilherme Leopoldino",
+            rm: "567242",
+            turma: "1TDSPB",
+            linkedin: "https://linkedin.com/in/membro2",
+            github: "https://github.com/GuiDSLeopoldino",
+            photo: "../img/guilherme.jpeg"
+        },
+        {
+            name: "Lucas Cunha Maia",
+            rm: "5667242",
+            turma: "1TDSPB",
             linkedin: "https://linkedin.com/in/membro2",
             github: "https://github.com/membro2",
-            photo: "https://via.placeholder.com/150"
+            photo: "../img/lucas.jpg"
         }
-        // Adicione mais membros conforme necessário
+ 
     ];
-    
+   
     function loadTeamData() {
-        // Remove loading indicator
+     
         teamGrid.innerHTML = '';
-        
-        // Add team members
+       
+     
         teamData.forEach(member => {
             const memberElement = document.createElement('div');
             memberElement.className = 'team-member';
@@ -49,19 +55,19 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             teamGrid.appendChild(memberElement);
         });
-        
-        // Update stats
+       
+     
         updateStats();
     }
-    
+   
     function updateStats() {
-        // Animate counters
+     
         animateCounter(totalMembers, teamData.length);
         animateCounter(completedProjects, 12); // Exemplo
         animateCounter(experienceYears, 3); // Exemplo
         animateCounter(technologies, 8); // Exemplo
     }
-    
+   
     function animateCounter(element, target) {
         let current = 0;
         const increment = target / 50;
@@ -74,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             element.textContent = Math.floor(current);
         }, 30);
     }
-    
-    // Load team data after a short delay to simulate loading
+   
+ 
     setTimeout(loadTeamData, 1000);
 });

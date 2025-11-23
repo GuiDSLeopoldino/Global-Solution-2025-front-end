@@ -6,6 +6,21 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+ 
+.logo-img {
+    width: 48px;        
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+ 
+
 :root {
     --primary-color: #1a2a6c;
     --secondary-color: #b21f1f;

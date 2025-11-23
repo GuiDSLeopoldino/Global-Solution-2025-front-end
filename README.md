@@ -1,4 +1,7 @@
-🚀 SkillVerse - Plataforma de Simulações Educacionais
+
+
+
+killVerse - Plataforma de Simulações Educacionais
 
 📋 Descrição do Projeto
 SkillVerse é uma plataforma educacional interativa que oferece simulações tecnológicas em diversas áreas de conhecimento. A solução proporciona uma experiência imersiva de aprendizado através de ambientes simulados com feedback visual avançado.
