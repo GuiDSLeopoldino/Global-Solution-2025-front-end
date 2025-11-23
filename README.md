@@ -1,7 +1,4 @@
-
-
-
-killVerse - Plataforma de Simulações Educacionais
+SkillVerse - Plataforma de Simulações Educacionais
 
 📋 Descrição do Projeto
 SkillVerse é uma plataforma educacional interativa que oferece simulações tecnológicas em diversas áreas de conhecimento. A solução proporciona uma experiência imersiva de aprendizado através de ambientes simulados com feedback visual avançado.
@@ -111,22 +108,7 @@ cd skillverse
 # Opção B: Servidor local
 python -m http.server 8000
 # Acesse: http://localhost:8000
-📁 Estrutura do Projeto
-text
-skillverse/
-│
-├── index.html                 # Página principal
-├── README.md                  # Documentação do projeto
-├── assets/                    # Recursos estáticos
-│   ├── css/
-│   │   └── styles.css         # Estilos principais
-│   ├── js/
-│   │   └── script.js          # Lógica da aplicação
-│   └── images/               # Imagens e ícones
-│
-└── docs/                     # Documentação adicional
-    ├── wireframes/           # Protótipos visuais
-    └── requirements/         # Especificações técnicas
+
 🎯 Casos de Uso
 👨‍🎓 Para Estudantes
 Praticar habilidades técnicas em ambiente seguro
@@ -188,8 +170,9 @@ https://github.com/GuiDSLeopoldino/Global-Solution-2025-front-end.git
 
 👨‍💻 Desenvolvido por
 Equipe SkillVerse
-- Erick Ramos Santos - RM: 567837
+
 - Guilherme de Sousa Leopoldino - RM: 567242  
 - Lucas Cunha Maia Vila Nova - RM: 566742
+- Matheus Carneiro Maciel RM:567753
 
 Inovando na educação tecnológica
